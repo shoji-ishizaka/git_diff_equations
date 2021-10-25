@@ -1,0 +1,30 @@
+﻿<?xml version="1.0"?>
+<data>
+    <time name="START">
+    	<value>0.0</value>
+    </time>
+    <time name="END">
+    	<value>250.0</value>
+    </time>
+    <time name="NUMBER_OF_CALCULATION">
+    	<value>4000</value>
+    </time>
+    <coefficient name="beta">
+    	<value>0.000000002</value>
+    </coefficient>
+    <coefficient name="gamma">
+    	<value>0.05</value>
+    </coefficient>
+    <formula name="x[0]">
+    	<exp>-beta * x[0] * x[1]</exp>
+	<init_value>100000000.0</init_value>
+    </formula>
+    <formula name="x[1]">
+        <exp>beta * x[0] * x[1] - gamma * x[1]</exp>
+        <init_value>10.0</init_value>
+    </formula>
+    <formula name="x[2]">
+        <exp>gamma * x[1]</exp>
+        <init_value>0.0</init_value>
+    </formula>
+</data>
